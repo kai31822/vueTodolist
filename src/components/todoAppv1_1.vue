@@ -74,14 +74,7 @@ export default {
       editedTask: null,
       // status :to-do, in-progress,finished
       availableStatues: ["待辦", "進行中", "已完成"],
-      tasks: [
-        {
-          name: "ToDoTask.",
-          status: "待辦",
-          //修改標記用
-          onfocus: "",
-        },
-      ],
+      tasks: [],
     };
   },
   methods: {
@@ -132,7 +125,7 @@ export default {
   },
   //test
   mounted: function () {
-    alert('test');
+    console.log('開始時,沒有預設待辦事項');
   },
   //test
 };
